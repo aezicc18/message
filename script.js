@@ -40,9 +40,9 @@ let encouragement = document.getElementById("encouragement").addEventListener("c
     let num = Math.floor(Math.random() * 6)
     let msg = ["You may not know why God is putting you in this situation right now, but always remember that his plans for you are better than you imagine.",
         "If things didn't work as you imagined, let it be, because God is preparing you for his greater plans for you.",
-        "Huwag kang susuko hangga't hindi ka pa Registered Nurse!!!",
+        "Every late night of studying brings you closer to saving lives.",
         "Keep going even though it's hard, because every step takes you closer to your goals!!",
-        "You're not behind, your're on your own path.",
+        "You're not behind, you're on your own path.",
         "Keep going, because the best is yet to come!!",
         "You're stronger than you think!!"
     ]
@@ -58,9 +58,9 @@ let quotes = document.getElementById("quotes").addEventListener("click", () =>{
         "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
         "When you are looking to be validated by others, you are living according to their values, not yours.",
         "If you weren't capable, the opportunity would have never come your way.",
-        "nostalgia is proof you're living a life to be proud of. What a privilege to yearn for your own memories",
-        "Flip a coin if you cant make a decision, because the moment it's in the air, you know exactly what side you want it to land on.",
-        "Everything will be okay in the end,so if it's not okay it's not the end"
+        "Nostalgia is proof you're living a life to be proud of. What a privilege to yearn for your own memories",
+        "Flip a coin if you can't make a decision, because the moment it's in the air, you know exactly what side you want it to land on.",
+        "Everything will be okay in the end, so if it's not okay, it's not the end"
     ]
     text = msg[num]
     typeEffect()
@@ -85,5 +85,6 @@ function typeEffect(){
         setTimeout(typeEffect, 100)
     }
 }
+
 
 
