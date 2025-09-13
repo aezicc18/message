@@ -82,9 +82,10 @@ function typeEffect(){
     if (i< text.length){
         p.innerHTML += text.charAt(i)
         i++
-        setTimeout(typeEffect, 100)
+        setTimeout(typeEffect, 1000)
     }
 }
+
 
 
 
