@@ -38,7 +38,7 @@ let encouragement = document.getElementById("encouragement").addEventListener("c
     i = 0
     p.innerHTML = ""
     let num = Math.floor(Math.random() * 6)
-    let msg = ["You may not know why God is putting you in this situation right now, but always remember that his plans for you are better than you imagine.",
+    let msg = ["You may not know why God is putting you in this situation right now, but always remember that his plans for you are better than you can imagine.",
         "If things didn't work as you imagined, let it be, because God is preparing you for his greater plans for you.",
         "Every late night studying brings you closer to saving lives.",
         "Keep going even though it's hard, because every step takes you closer to your goals!!",
@@ -86,6 +86,7 @@ function typeEffect(){
         setTimeout(typeEffect, 100)
     }
 }
+
 
 
 
