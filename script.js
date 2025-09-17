@@ -42,9 +42,10 @@ let encouragement = document.getElementById("encouragement").addEventListener("c
         "If things didn't work as you imagined, let it be, because God is preparing you for his greater plans for you.",
         "Every late night of studying brings you closer to saving lives.",
         "Keep going even though it's hard, because every step takes you closer to your goals!!",
-        "You're not behind, you're on your own path.",
         "Keep going, because the best is yet to come!!",
-        "You're stronger than you think!!"
+        "Every nurse was once a student who doubted themselves. Keep going, you’re closer than you think.",
+        "Nursing school is tough, but so are you.",
+        "Your future patients are counting on you—even if you don’t believe in yourself right now, believe in them."
     ]
     text = msg[num]
     typeEffect()
@@ -85,6 +86,7 @@ function typeEffect(){
         setTimeout(typeEffect, 100)
     }
 }
+
 
 
 
