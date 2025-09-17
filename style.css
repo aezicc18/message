@@ -147,3 +147,44 @@ button:active {
   transform: scale(1.05);
   box-shadow: 0 5px 10px rgba(180, 4, 4, 0.2);
 }
+
+@media (max-width: 1920px) {
+  .m1 {
+    font-size: 50px; /* smaller title */
+    width: 90%;
+  }
+
+  .m2 {
+    font-size: 32px;
+    width: 80%;
+  }
+
+  .display {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .music {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  p {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  button {
+    font-size: 22px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .m1 { font-size: 40px; }
+  .m2 { font-size: 26px; }
+  .music { max-width: 350px; }
+  p { font-size: 22px; }
+  button { font-size: 18px; width: 180px; }
+}
