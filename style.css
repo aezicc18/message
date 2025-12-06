@@ -51,12 +51,12 @@ li{
     list-style: none;
     border: 0;
 }
-.msgme:hover{
+.msgme:hover, .happy:hover{
     border-bottom: #F28BB2;
     border-style: solid;
     cursor: pointer;
 }
-.msgme{
+.msgme, .happy{
     border-bottom: #9CCBE5;
     border-style: solid;
 }
@@ -213,3 +213,4 @@ button:active {
     left: 86%;
     transform: translate(-50%,-50%);
 }
+
