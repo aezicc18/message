@@ -1,0 +1,670 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F7D9E6;
+    padding: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    width: 40%;
+    height: 70%;
+    border-radius: 2rem;
+    background-color: #FFE0EC;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    box-shadow: 0.2rem 0.3rem rgba(233, 30, 99, 0.25);
+    z-index: 100;
+}
+.container>h1{
+    font-size: 500%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #B3005E;
+}
+.container>h3{
+    font-size: 200%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #B3005E;
+}
+.image{
+    background-image: url(/images/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 120%;
+    border-radius: 1rem;
+    margin-top: 3%;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+}
+.get{
+    width: 40%;
+    height: 8%;
+    border-radius: 4rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200%;
+    background-color: #B3005E;
+    box-shadow: 0.2rem 0.3rem rgba(0,0,0,0.22);
+    color: #ffffff;
+    margin-top: 44%;
+}
+.get:hover{
+    color: #FF4D88;
+    background-color: #ffffff;
+    border: 0.3rem solid #FF4D88;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.3rem rgba(0,0,0,0.28);
+}
+.get:active{
+    transform: translateY(0.2rem);
+}
+.frontEnvelope{
+    position: absolute;
+    top: 10;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.leftEnvelope{
+    border-top: 20rem solid transparent;
+    border-bottom: 14rem solid #FF6FB5;
+    border-left:35rem solid #FF6FB5;
+    position: absolute;
+    top: 10;
+}
+.rightEnvelope{
+    border-top: 20rem solid transparent;
+    border-bottom: 14rem solid #FF6FB5;
+    border-right:35rem solid #FF6FB5;
+}
+.containContent{
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+    background-color: #EAA9C9;
+    position: inherit;
+}
+.containContent.bg{
+    background-color: transparent;
+}
+.topEnvelope{
+    border-top: 23.1rem solid #6A57C8;
+    border-right: 38.1rem solid transparent;
+    border-left: 38.1rem solid transparent;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+}
+.topEnvelope.open{
+    animation: openAni 3s forwards ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contentEnvelope{
+    width: 20%;
+    height: 67%;
+    border-radius: 1rem;
+    background-image: url(/images/letter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+.contentEnvelope.open{
+    animation: moveLetter 15s forwards;
+}
+#img1.arrange{
+    animation: moveDesign1 2s forwards;
+}
+#img2.arrange{
+    animation: moveDesign2 2s forwards;
+}
+#img3.arrange{
+    animation: moveDesign3 2s forwards;
+}
+#img4.arrange{
+    animation: moveDesign4 2s forwards;
+}
+#img5.arrange{
+    animation: moveDesign5 2s forwards;
+}
+#img6.arrange{
+    animation: moveDesign6 2s forwards;
+}
+#img7.arrange{
+    animation: moveDesign7 2s forwards;
+}
+#img8.arrange{
+    animation: moveDesign8 2s forwards;
+}
+
+#img9.arrange{
+    animation: moveDesign9 2s forwards;
+}
+#img10.arrange{
+    animation: moveDesign10 2s forwards;
+}
+#img1{
+    background-image: url(/images/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    rotate: -20deg;
+    z-index: 10;
+}
+#img2{
+    background-image: url(/images/2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    rotate: 10deg;
+    z-index: 10;
+}
+#img3{
+    background-image: url(/images/3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    rotate: -30deg;
+    z-index: 10;
+}
+#img4{
+    background-image: url(/images/4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0%;
+    left: 44%;
+    rotate: 10deg;
+    z-index: 10;
+}
+#img5{
+    background-image: url(/images/5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 58%;
+    left: 10%;
+    z-index: 3;
+    rotate: -20deg;
+}
+#img6{
+    background-image: url(/images/6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    rotate: 10deg;
+    z-index: 3;
+}
+#img7{
+    background-image: url(/images/7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+#img8{
+    background-image: url(/images/8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    rotate: 20deg;
+    z-index: 10;
+}
+#img9{
+    background-image: url(/images/9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    rotate: 10deg;
+    z-index: 10;
+}
+#img10{
+    background-image: url(/images/10.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 4.5%;
+    left: 45%;
+    z-index: 2;
+    rotate: -20deg;
+    z-index: 10;
+}
+.titleMsg{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100%;
+    color: #B3005E;
+    position: absolute;
+    top: -0.7%;
+    left: 25%;
+    z-index: 0;
+}
+.Msg{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 55%;
+    color: #B3005E;
+    text-align: center;
+    z-index: 0;
+    position: absolute;
+    top: 31%;
+    width: 86%;
+    padding-left: 7%;
+    word-spacing: 0.2rem;
+}
+.pic{
+    width: 85%;
+    height: 25%;
+    background-color: #f879ac;
+    position: absolute;
+    top: 6%;
+    left: 7.5%;
+    background-image: url(/images/flower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.images{
+    width: 50%;
+    height: 50%;
+}
+.envelope{
+    width: 87.7%;
+    height: 45vh;
+    background-color: #EAA9C9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.envelope.push{
+    animation: envePush 3s forwards;
+}
+.envelope.move{
+    animation: moveEnve 15s forwards; 
+}
+.envelope.bg{
+    background-color: transparent;
+}
+.openBtn{
+    position: absolute;
+    top: 55%;
+    z-index: 4;
+    width: 20%;
+    height: 40%;
+    background-image: url(/images/heart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 300%;
+    color: black;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.yLine{
+    width: 100%;
+    height: 8%;
+    background-color: #f879ac;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    z-index: 11;
+}
+.yLine.open{
+    animation: removeRibbon 1s;
+}
+.xLine{
+    width: 8%;
+    height: 100%;
+    background-color: #f879ac;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    z-index: 11;
+}
+.xLine.open{
+    animation: removeRibbon 1s;
+}
+.unlock{
+    width: 50%;
+    height: 50%;
+    background-image: url(/images/ribbon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    position: absolute;
+    top: 24%;
+    left: 8%;
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100%;
+    color: #000000;
+    text-align: center;
+}
+.unlock.open{
+    animation: removeRibbon 1s;
+}
+.box{
+    width: 50%;
+    height: 30%;
+}
+#box1{
+    position: absolute;
+    top: 60%;
+    left: -5%;
+    background-image: url(/images/bg/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: -10deg;
+    opacity: 50%;
+    scale: 1.4;
+}
+#box2{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-image: url(/images/bg/2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: -20deg;
+    opacity: 50%;
+}
+#box3{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-image: url(/images/bg/3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 10deg;
+    opacity: 50%;
+    z-index: 0;
+}
+#box4{
+    position: absolute;
+    top: 23%;
+    left: -17%;
+    background-image: url(/images/bg/4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 5deg;
+    opacity: 50%;
+}
+#box5{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    background-image: url(/images/bg/5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: -20deg;
+    opacity: 50%;
+    z-index: 0;
+}
+#box6{
+    position: absolute;
+    top: -5%;
+    left: 30%;
+    background-image: url(/images/bg/6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: -10deg;
+    opacity: 50%;
+    z-index: 0;
+
+}#box7{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    background-image: url(/images/bg/7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 20deg;
+    opacity: 50%;
+}
+#box8{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    background-image: url(/images/bg/8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 20deg;
+    opacity: 50%;
+}
+#box9{
+    position: absolute;
+    top: 0%;
+    left: 65%;
+    background-image: url(/images/bg/9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 0deg;
+    opacity: 50%;
+}
+@keyframes removeRibbon {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-5%); 
+    }
+}
+@keyframes moveDesign8 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-150%, -30%) scale(0.7) rotate(-20deg);
+    }
+}
+@keyframes moveDesign1 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-170%, -10%) scale(0.7) rotate(20deg);
+    }
+}
+@keyframes moveDesign2 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(110%, 30%) scale(1) rotate(-15deg);
+    }
+}
+@keyframes moveDesign3 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(170%, 60%) scale(0.7) rotate(30deg);
+    }
+}
+@keyframes moveDesign4 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-40%, 180%) scale(0.4) rotate(20deg);
+    }
+}
+@keyframes moveDesign5 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(140%, -150%) scale(0.4) rotate(10deg);
+    }
+}
+@keyframes moveDesign6 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(188%, 0%) scale(0.7) rotate(170deg);
+    }
+}
+@keyframes moveDesign7 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-85%, 55%) scale(0.7);
+    }
+}
+@keyframes moveDesign9 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-110%, -155%) scale(0.4) rotate(-10deg);
+    }
+}
+@keyframes moveDesign10 {
+    from{
+        transform: translate(0);
+    }
+    to {
+        transform: translate(-60%, 152%) scale(0.4) rotate(20deg);
+    }
+}
+@keyframes openAni {
+    from {
+        transform:rotateX(0deg);
+    }
+    to {
+        transform: rotateX(180deg);
+    }
+}
+@keyframes envePush {
+    from {
+        transform: translateY(200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+@keyframes moveEnve {
+    0% {
+        transform: translate(0, 0);
+    }
+    10%{
+        transform: translate(0, 40%);
+    }
+    100% {
+        transform: translate(0, 40%);
+    }
+}
+
+@keyframes moveLetter {
+    0%{
+        transform: translateY(0);
+    }
+    13%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+    35%{
+        transform: translateY(-35%) scale(2.5);
+        z-index: 100;
+    }
+    50% {
+        transform: translateY(-35%) scale(2.5);
+        z-index: 100;
+    }
+    100% {
+        transform: translateY(-35%) scale(2.5);
+        z-index: 100;
+    }
+
+}
