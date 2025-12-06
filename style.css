@@ -100,7 +100,7 @@ li{
     top: 9%;
     right: 0%;
     transform: translate(-50%,-50%);
-    background-image: url("9.png");
+    background-image: url("12.png");
     background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ li{
     top: 9%;
     right: 4%;
     transform: translate(-50%,-50%);
-    background-image: url("10.png");
+    background-image: url("13.png");
     background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
@@ -213,4 +213,5 @@ button:active {
     left: 86%;
     transform: translate(-50%,-50%);
 }
+
 
